@@ -5,7 +5,12 @@
 }
 a {
   all: unset;
+  display: inline-block;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+a:hover {
+  transform: scale(1.1);
 }
 strong {
   font-weight: 700;
@@ -457,4 +462,10 @@ strong {
   text-transform: uppercase;
   background: #444240;
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7;
 }
